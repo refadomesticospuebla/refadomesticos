@@ -1,6 +1,6 @@
 // ========== CONFIGURA TU WHATSAPP AQUÍ ==========
 // Formato sugerido: 52155XXXXXXXX (código de país 52 + 1 + 10 dígitos)
-const WHATSAPP_NUMBER = "52 22 26 30 96 10"; // <-- REEMPLAZA ESTE NÚMERO
+const WHATSAPP_NUMBER = "52 222 630 96 10"; // <-- REEMPLAZA ESTE NÚMERO
 // ================================================
 
 const PRODUCTS = [
