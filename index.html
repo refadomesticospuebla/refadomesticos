@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Refadomésticos - Tienda</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">
+        <span class="logo">R</span>
+        <div>
+          <h1>Refadomésticos</h1>
+          <p class="tag">Refacciones para electrodomésticos</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#" class="nav-link active" data-filter="all">Todos</a>
+        <a href="#" class="nav-link" data-filter="Lavadoras">Lavadoras</a>
+        <a href="#" class="nav-link" data-filter="Estufas">Estufas</a>
+        <a href="#" class="nav-link" data-filter="Licuadoras">Licuadoras</a>
+        <a href="#" class="nav-link" data-filter="Refrigeradores">Refrigeradores</a>
+        <a href="#" class="nav-link" data-filter="Otros">Otros</a>
+      </nav>
+      <div class="actions">
+        <input id="search" type="search" placeholder="Buscar producto..." />
+        <button id="cartButton" class="btn">Carrito <span id="cartCount" class="badge">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h2>Refacciones confiables, precios justos</h2>
+        <p>Mantén tus electrodomésticos funcionando. Envíos a todo México. ¡Cotiza por WhatsApp!</p>
+        <a id="whatsappBtn" class="btn btn-primary" href="#" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </section>
+
+    <section id="catalogo" class="grid"></section>
+  </main>
+
+  <aside id="cartDrawer" class="drawer">
+    <div class="drawer-header">
+      <h3>Tu Carrito</h3>
+      <button id="closeDrawer" class="icon-btn" aria-label="Cerrar">✕</button>
+    </div>
+    <div id="cartItems" class="drawer-items"></div>
+    <div class="drawer-footer">
+      <div class="totals">
+        <span>Total:</span>
+        <strong id="cartTotal">$0.00</strong>
+      </div>
+      <a id="checkoutBtn" class="btn btn-primary" href="#" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+      <button id="clearCart" class="btn btn-ghost">Vaciar carrito</button>
+    </div>
+  </aside>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Refadomésticos — Hecho con cariño.</p>
+      <p class="tiny">Reemplaza el número de WhatsApp en <code>js/script.js</code> (variable <code>WHATSAPP_NUMBER</code>).</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
